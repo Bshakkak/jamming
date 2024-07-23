@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Starfield from 'react-starfield';
+import SearchBar from './Components/SearchBar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+    <div className='mainApp'>
+    <Starfield
+        starCount={1000}
+        starColor={[255, 255, 255]}
+        speedFactor={0.05}
+        backgroundColor="black"
+      />
+      <header>
+        <h1 className='logoFont'>Jamming</h1>
       </header>
+      <SearchBar />
     </div>
+    </>
   );
 }
 
