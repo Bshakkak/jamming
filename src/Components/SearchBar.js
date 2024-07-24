@@ -18,7 +18,7 @@ function SearchBar(){
         <form className={styles.form} onSubmit={handleSubmit}>
             <input type="text" name="search" id="search" value={searchTerm} 
             onChange={handleSearchChange} className={styles.input}/>
-            <Button type="submit" text="Search"/>
+            <Button type="submit" text="Search" bclass="btn"/>
         </form>
     );
 }

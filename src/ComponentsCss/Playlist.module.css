@@ -1,0 +1,46 @@
+.playlistContainer {
+    width: 70%;
+    background-color: #10162F;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+.playlistIn {
+    margin: auto;
+    width: 99%;
+    padding: 1rem 0.8rem;
+    background-color: #334756;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+}
+
+.inputList {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    font-family: "Zain", sans-serif;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    border-bottom: 0.1rem white solid;
+    border-radius: 0.1rem;
+}
+
+.inputList:focus{
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-bottom: 0.1rem white solid;
+    border-radius: 0.1rem;
+}
+
+@media only screen and (max-width: 768px){
+    .playlistContainer{
+        width: 90%;
+    }
+}

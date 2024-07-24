@@ -1,0 +1,48 @@
+.trackContainer {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-bottom: 0.1rem white solid;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainName {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.subname {
+    display: block;
+    font-size: 1.2rem;
+    color: darkgrey;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btnAdd{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.btnAdd:hover{
+    color: #10162F;
+}
+
+.btnAdd:active{
+    color:  rgba(255, 255, 255, 0.2);
+}

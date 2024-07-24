@@ -20,3 +20,26 @@
 .btn:active{
     background-color:  rgba(255, 255, 255, 0.2);
 }
+
+.btn2 {
+    padding: 0.8rem 3rem;
+    color: white;
+    background-color: #10162F;
+    margin-top: 1.8rem;
+    font-family: "Zain", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    color: white;
+    background-color:  rgba(255, 255, 255, 0.2);
+}
+
+/* .btn2:active{
+    background-color: #334756 ;
+} */

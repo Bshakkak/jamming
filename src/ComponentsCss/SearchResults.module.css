@@ -1,0 +1,28 @@
+.searchRSec {
+    width: 70%;
+    background-color: #10162F;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+.searchIn {
+    margin: auto;
+    width: 99%;
+    padding: 1rem 0.8rem;
+    background-color: #334756;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+}
+.titleSpan {
+    color: white;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 768px){
+    .searchRSec{
+        width: 90%;
+    }
+}
