@@ -4,6 +4,18 @@
   font-weight: 400;
   font-style: normal;
 }
+.mainAppLogin{
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spanLogin {
+  color: white;
+  font-size: 2rem;
+}
 
 header{
   width: 100%;
@@ -43,6 +55,15 @@ header{
   align-items: center;
 }
 
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
   .listResults{
     flex-direction: column;
@@ -54,6 +75,10 @@ header{
   }
   .playlist{
     width: 100%;
+  }
+  .spanLogin {
+    color: white;
+    font-size: 1.5rem;
   }
 }
 
@@ -68,5 +93,9 @@ header{
   }
   .playlist{
     width: 100%;
+  }
+  .spanLogin {
+    color: white;
+    font-size: 1.5rem;
   }
 }

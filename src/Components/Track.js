@@ -7,7 +7,7 @@ function Track(props){
     return(
         <>
             <div className={styles.trackContainer}>
-                <div><span className={styles.mainName}>{props.song}</span>
+                <div style={{maxWidth: "80%"}}><span className={styles.mainName}>{props.song}</span>
                     <span className={styles.subname}>{props.artist} | {props.album}</span>
                 </div>
                 <div className={styles.btnAdd} onClick={handleClick}>+</div>
