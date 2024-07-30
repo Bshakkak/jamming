@@ -12,26 +12,22 @@ import filterData from "../HelperFunctions/FilterData";
 //     {id: "id5", song: "song5", artist:"artist5", album: 'album5'},
 // ];
 
-function SearchResults({tracks = {}}){
+function SearchResults({tracks = {}, displayedTracks = (data) => data}){
     const [receivedData, setReceivedData] = useState([]);
     
     useEffect(()=>{
         setReceivedData(filterData(tracks))
     },[tracks])
 
-    // useEffect(()=>{
-    //     let call = setTimeout(()=> {setReceivedData(mockData)}, 1000);
-    //     return ()=>{
-    //         clearTimeout(call)
-    //     }
-    // },[]);
+    
 
     return(
         <>
             <div className={styles.searchRSec}>
                 <div className={styles.searchIn}>
                     <span className={styles.titleSpan}>Results</span>
-                    {receivedData.map(data => <Track key={`result_${data.id}`} {...data}/>)}
+                    {receivedData.map(data => <Track key={`result_${data.id}`} {...data} symbol="+" 
+                    displayedTracks={displayedTracks} btnType="btnAdd"/>)}
                 </div>
             </div>
         </>
