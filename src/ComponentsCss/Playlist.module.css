@@ -54,11 +54,11 @@
 
 .showMessageGreen{
     opacity: 1;
-    color: green;
+    color: rgb(84, 202, 84);
 }
 .showMessageRed{
     opacity: 1;
-    color: red;
+    color: rgb(214, 104, 104);
 }
 
 
