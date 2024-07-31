@@ -1,9 +1,12 @@
 
 
-async function createPlaylist(token, spotifyID, playlist){
+async function createPlaylist(token, spotifyID, playlist, searchList){
     if(!playlist){
         console.log("playlist name is empty");
         return null;
+    }
+    if(searchList.length){
+        return searchList[0].id;
     }
     let result;
     const playlistEndpoint = `https://api.spotify.com/v1/users/${spotifyID}/playlists`;

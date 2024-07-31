@@ -22,7 +22,7 @@ async function addPlaylistTracks(token, playlistID, playlistItems){
             throw new Error(`HTTP error in playlist: ${response.status}, ${errorDetails.error.message}`)
         }
         result = await response.json();
-        console.log(result)
+        return result;
     }catch(e){
         console.log("Error adding to playlist", e)
     }

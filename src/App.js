@@ -15,7 +15,7 @@ function App() {
   const REDIRECT_URI = "http://localhost:3000/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
-  const SCOPE = "playlist-modify-private playlist-modify-public"
+  const SCOPE = "playlist-modify-private playlist-modify-public playlist-read-private playlist-read-collaborative";
   
   const handleSubmit = (e) =>{
     e.preventDefault();
@@ -29,7 +29,7 @@ function App() {
   useEffect(()=>{
     const hash = window.location.hash;
     let token = window.localStorage.getItem("accessToken");
-    if((!token && hash)){
+    if(!token && hash){
       token = hash.substring(1).split('&')[0].split('=')[1];
       window.location.hash="";
       window.localStorage.setItem("accessToken", token);
