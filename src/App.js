@@ -20,7 +20,7 @@ function App() {
   const [displayedTracks, setDisplayedTracks] = useState([]);
 
   const CLIENT_ID = "a41cf333acf74a14b7648809d14633b9";
-  const REDIRECT_URI = "http://localhost:3000/";
+  const REDIRECT_URI = "https://jammingbshkooo.netlify.app/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const SCOPE = "playlist-modify-private playlist-modify-public playlist-read-private playlist-read-collaborative";
